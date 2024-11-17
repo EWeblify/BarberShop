@@ -1,0 +1,345 @@
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* HTML */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    background: url(bg2.jpeg) no-repeat top center/100% 700px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Navbar */
+.nav{
+    z-index: 1000;
+}
+
+/* Home */
+.home {
+    width: 98.4vw;
+    height: 93vh;
+    color: white;
+}
+
+.home p {
+    margin-top: 200px;
+    margin-left: 20px;
+    font-size: 40px;
+    width: 650px;
+    text-transform: uppercase;
+    color: rgb(238, 237, 237);
+    text-shadow: 5px 5px 10px black;
+    animation-name: home-anime;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.home p:nth-child(2) {
+    text-shadow: none;
+    margin-top: 10px;
+    font-size: 35px;
+    color: black;
+    -webkit-text-stroke: 0px;
+    text-transform: none;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 1px 2px 10px rgb(207, 207, 207);
+}
+
+.home-btn {
+    width: 350px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home button {
+    background-color: rgba(0, 0, 0, 0.671);
+    width: 130px;
+    height: 70px;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: 2px solid black;
+    color: white;
+    animation-name: home-btn-anime;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.home button:hover{
+    background-color: rgba(0, 0, 0, 0.733);
+}
+@keyframes home-anime {
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes home-btn-anime {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Section 1 */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+.section1 {
+    text-align: center;
+    height: 650px;
+    padding-top: 20px;
+    background-color: #f5f5f5;
+}
+
+.section1 h1 {
+    font-size: 60px;
+}
+
+.section1 hr {
+    width: 350px;
+    background-color: red;
+    padding: 3px;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.barber-container {
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.barber-img img {
+    width: 250px;
+    margin: 0 20px;
+    border: 5px solid goldenrod;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 10px 10px;
+    padding-bottom: 0;
+    background-color: black;
+}
+
+.section1-para {
+    margin-top: 20px;
+    padding: 50px 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Section2 */
+.section2 {
+    height: 900px;
+    margin-top: 80px;
+    background-color: #ececec;
+}
+
+.section2 h1 {
+    text-align: center;
+    font-size: 70px;
+    padding-top: 30px;
+}
+
+.section2 hr {
+    width: 300px;
+    background-color: red;
+    padding: 3px;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.featured-product-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.featured-product {
+    width: 200px;
+    height: 330px;
+    margin: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+.featured-product a{
+    text-decoration: none;
+}
+
+.featured-product img {
+    width: 200px;
+    height: 230px;
+}
+
+.featured-product h4 {
+    font-size: 18px;
+    margin-left: 5px;
+    color: red;
+}
+
+.featured-product p {
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+.featured-product:hover {
+    box-shadow: rgb(44, 44, 44) 0px 2px 10px;
+}
+.featured-product button{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(1, 190, 253);
+    color: white;
+    border-radius: 5px;
+}
+.featured-product button:hover{
+    background-color: rgb(3, 170, 226);
+}
+
+/* Section3 */
+.section3 {
+    margin-top: 80px;
+    background-color: rgb(255, 238, 0);
+    height: 600px;
+}
+
+.section3 h1 {
+    text-align: center;
+    font-size: 70px;
+    padding: 30px;
+}
+
+.section3 p {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 5px;
+    color: red;
+    text-decoration: underline;
+}
+
+.flash-sale-container {
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.flash-sale-product {
+    width: 200px;
+    height: 330px;
+    margin: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.flash-sale-product img {
+    width: 200px;
+    height: 230px;
+}
+
+.flash-sale-product h4 {
+    font-size: 18px;
+    margin-left: 5px;
+    color: red;
+}
+
+.flash-sale-product p {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 5px;
+    float: left;
+}
+.flash-sale-product span p{
+    margin-left: 10px;
+    font-size: 15px;
+    color: grey;
+    text-decoration: line-through;
+}
+
+.flash-sale-product:hover {
+    box-shadow: rgb(44, 44, 44) 0px 2px 10px;
+}
+.flash-sale-product button{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(1, 190, 253);
+    color: white;
+    border-radius: 5px;
+}
+.flash-sale-product button:hover{
+    background-color: rgb(3, 170, 226);
+}
+
+/* section4 */
+.section4 {
+    margin-top: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) -1px -1px 5px;
+    padding: 10px;
+    height: 300px;
+}
+
+.section4 h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10px;
+}
+
+.section4 hr {
+    padding: 2px;
+    border: 1px solid red;
+    background-color: red;
+    width: 200px;
+    margin: auto;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+
+.brand-img-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-img {
+    width: 300px;
+    height: 180px;
+    text-align: center;
+}
+
+.brand-img img {
+    width: 180px;
+}
+/* footer */
+
+
